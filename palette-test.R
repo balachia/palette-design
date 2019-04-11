@@ -98,7 +98,7 @@ if(setup=='swatch') {
     texts <- transpose(list(y=seq(0.1, by=0.10, length.out=4),
                             col=grays))
     for(spec in texts) {
-        text(xs+0.1, y1s+spec$y,
+        text(xs+0.1, ys+spec$y,
              labels=cols, col=spec$col,
              adj=c(0,0))
     }
@@ -112,12 +112,12 @@ if(setup=='swatch') {
 
 } else if(setup=='light') {
     par(bg='#ffffff')
-    #text(xs+0.2, y1s+0.45,
+    #text(xs+0.2, ys+0.45,
     #     labels=cols, col=cols,
     #     adj=c(0,0))
 } else if(setup=='dark') {
     par(bg='#000000')
-    #text(xs+0.2, y1s+0.45,
+    #text(xs+0.2, ys+0.45,
     #     labels=cols, col=cols,
     #     adj=c(0,0))
 }
